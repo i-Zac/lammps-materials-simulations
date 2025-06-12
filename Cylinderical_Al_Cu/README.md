@@ -40,6 +40,8 @@ The generated Al_10Cu_alloy.lmpdat contains:
   -FCC crystal structure oriented along [100], [010], [001] directions
   -Cylindrical free surfaces with diameter ~80Å
   -Periodic boundaries along Z-axis (wire length)
+## Sample Results
+![AlCu](AlCu.png)
 
 ## Customization
 To modify the nanowire properties:

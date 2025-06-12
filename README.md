@@ -58,7 +58,7 @@ I'm eager to expand my knowledge and contribute to research in computational mat
 - [ ] Automate plots and analysis with Python
 - [ ] Learn about ML-enhanced interatomic potentials
 - [ ] Contribute to open-source materials science projects
-
+---
 ## 📜 License
 
 This project is licensed under the MIT License.

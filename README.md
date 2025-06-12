@@ -20,7 +20,7 @@ Each project simulates different materials systems using molecular dynamics. The
 
 | Project | Description |
 |--------|-------------|
-| [Al-10%Cu Simulation](https://github.com/i-Zac/lammps-al10cu) | Simulates tensile behavior of Al-10%Cu and visualizes dislocation motion |
+| [Al-10%Cu Simulation](Al10_Cu (1)) | Simulates tensile behavior of Al-10%Cu and visualizes dislocation motion |
 | [MgC Simulation](https://github.com/i-Zac/lammps-mgc) | Investigates phase transformations in MgC under heating |
 | [Cantor Alloy Study](https://github.com/i-Zac/lammps-cantor-alloy) | Explores compositional stability in high-entropy alloys |
 

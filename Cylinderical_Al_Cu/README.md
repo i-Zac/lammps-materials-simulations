@@ -32,7 +32,7 @@ The removal of outer atoms creates:
   -A pristine cylindrical nanowire structure
   -Free surfaces on the sides (cylindrical surface)
   -Periodic boundary conditions maintained along Z-axis (wire axis)
-
+```
 ##Output File
 The generated Al_10Cu_alloy.lmpdat contains:
   -Atomic coordinates in LAMMPS data format

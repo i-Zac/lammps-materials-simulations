@@ -1,0 +1,49 @@
+#Code for Casting of Al15%Mg15%Cu
+#Yami_Sempai {-_-}
+
+#Initialization
+units metal 
+dimension 3
+boundary p p p
+atom_style atomic
+atom_modify map array
+read_data Al_10_Cu.lmpdat
+
+#Interatomic force fields
+pair_style meam
+pair_coeff * * ../potentials/library.meam Al Cu AlCu.meam Al Cu
+
+#Settings
+timestep 0.001
+thermo 100
+thermo_style custom step vol temp
+min_style cg
+minimize 1.0e-10 1.0e-10 1000 1000
+velocity all create 300 12345 rot yes mom yes dist gaussian
+#Computations and dump
+compute Hey all rdf 100
+dump 1 all custom 500 dump.cast3.* id type x y z 
+#fix 
+fix dear all ave/time 10 100 1000 c_Hey[*] file tmp1.rdf mode vector
+#Melting operation
+fix 2 all npt temp 273 1073 $(100*dt) iso 0 0 $(1000*dt)
+run  30000
+unfix 2
+#Second equiliberation
+fix 3 all nvt temp 1073 1073  $(100*dt)
+run 30000
+unfix 3
+#Cooling at 16K/ps
+fix 4 all npt temp 1073  273 $(100*dt) iso 0.004 0.004 $(1000*dt)
+run  50000
+unfix 4
+#Final equiliberation
+fix 5 all npt temp 273 273 $(100*dt) iso 0 0 $(1000*dt)
+run 50000
+unfix 5
+
+#Casting
+write_data Al_10_Cu_2.lmpdat
+ write_restart Al_10_Cu_2.lmp
+
+print "All done Zac !"

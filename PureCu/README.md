@@ -37,6 +37,9 @@ To view the generated structure:
 3. Enable "Coordination analysis" to verify FCC structure
 4. Use "Polyhedral template matching" to confirm crystal orientation
 
+## Result
+![Image ](result/pureCu.png)
+
 ## Part 2: Casting Simulation (`cucast(1).lammps`)
 
 ### Simulation Stages
@@ -67,6 +70,9 @@ To view the generated structure:
 - `tmp1.rdf`: Radial distribution function data
 - `cu.lmpdat`: Final structure
 - `cu.rest`: Restart file
+
+## Result
+![Image ](result/pureCuCast.png)
 
 ## Requirements
 - [Atomsk](https://atomsk.univ-lille.fr/) (for structure generation)

@@ -35,24 +35,25 @@ The removal of outer atoms creates:
 ```
 ##Output File
 The generated Al_10Cu_alloy.lmpdat contains:
-  -Atomic coordinates in LAMMPS data format
-  -Al-Cu alloy nanowire with 10% Cu concentration
-  -FCC crystal structure oriented along [100], [010], [001] directions
-  -Cylindrical free surfaces with diameter ~80Å
-  -Periodic boundaries along Z-axis (wire length)
+  - Atomic coordinates in LAMMPS data format
+  - Al-Cu alloy nanowire with 10% Cu concentration
+  - FCC crystal structure oriented along [100], [010], [001] directions
+  - Cylindrical free surfaces with diameter ~80Å
+  - Periodic boundaries along Z-axis (wire length)
+
 ## Sample Results
 ![AlCu](AlCu.png)
 
 ## Customization
 To modify the nanowire properties:
-  -Change wire radius by modifying 40 in cylinder selection
-  -Adjust length by changing the Z-duplication value (60)
-  -Change alloy concentration by modifying 10%% Cu substitution
-  -Alter output filename by editing Al_10Cu_alloy.lmp
+ - Change wire radius by modifying 40 in cylinder selection
+ - Adjust length by changing the Z-duplication value (60)
+ - Change alloy concentration by modifying 10%% Cu substitution
+ - Alter output filename by editing Al_10Cu_alloy.lmp
 
 ## Suggested Applications
-This structure is particularly useful for:
-  -Nanowire mechanical property simulations
-  -Surface diffusion studies
-  -Electro-migration research
-  -Nanoscale alloy phase formation
+This structure is can be useful for:
+ - Nanowire mechanical property simulations
+ - Surface diffusion studies
+ - Electro-migration research
+ - Nanoscale alloy phase formation
